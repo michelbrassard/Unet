@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+        "label": "Build Unet",
+        "type": "shell",
+        "command": "cmake --build build",
+        "group": {
+            "kind": "build",
+            "isDefault": true
+        },
+        "problemMatcher": ["$gcc"],
+        "dependsOn": ["Configure CMake"]
+    },
+    {
+        "label": "Run Unet",
+        "type": "shell",
+        "command": "./Unet",
+        "options": {
+            "cwd": "${workspaceFolder}/build"
+        },
+        "group": "test"
+    },
+    {
+        "label": "Build and Run Unet",
+        "type": "shell",
+        "command": "cmake --build build && ./build/Unet",
+        "options": {
+            "cwd": "${workspaceFolder}"
+        },
+        "group": "build",
+        "problemMatcher": ["$gcc"],
+        "dependsOn": ["Configure CMake"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "configurations": [
+    {
+        "name": "Launch Unet",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/Unet",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${fileDirname}/build",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "lldb"
+    }
+    ]
+}

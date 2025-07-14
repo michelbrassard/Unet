@@ -1,9 +1,11 @@
 #include <QApplication>
-#include <QPushButton>
+#include "widgets/FramelessWindow.h"
 
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-    QPushButton button("Hello, Qt 6!");
-    button.show();
+
+    FramelessWindow window;
+    window.show();
+
     return app.exec();
 }

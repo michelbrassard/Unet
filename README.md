@@ -15,3 +15,8 @@
 - cd build
 - cmake ..
 - cmake --build .
+
+### Reminders
+
+use launch.json command when debugger is needed
+otherwise use tasks.json

@@ -9,5 +9,8 @@ set(Qt6_DIR "/Users/michelbrassard/Qt/6.9.1/macos/lib/cmake/Qt6")
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-add_executable(Unet main.cpp)
+add_executable(Unet
+    main.cpp
+    widgets/FramelessWindow.cpp
+)
 target_link_libraries(Unet Qt6::Widgets)
